@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Salesforce.Helpers</RootNamespace>
     <AssemblyName>Salesforce.Helpers</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,12 +50,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kCura.Crypto, Version=9.4.398.62, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="kCura.IntegrationPoints.Contracts, Version=9.4.158.3, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Program Files\kCura Corporation\Relativity SDK\Agents\Client\kCura.Crypto.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.IntegrationPoints.Contracts">
-      <HintPath>C:\Program Files\kCura Corporation\Relativity SDK\Integration Points SDK 9.4.158.3\Provider\kCura.IntegrationPoints.Contracts.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files\kCura Corporation\Integration Points\Integration Points SDK 9.5.57.2\Provider\kCura.IntegrationPoints.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -185,7 +183,9 @@
     <None Include="Web References\sForceService\FindDuplicatesResult.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
-    <None Include="Web References\sForceService\GenericPartner.wsdl" />
+    <None Include="Web References\sForceService\GenericPartner.wsdl">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web References\sForceService\GetDeletedResult.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
@@ -267,10 +267,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="D:\src\CustomDev\salesforce_rip_provider\Source\GenericPartner.wsdl">
+    <WebReferenceUrl Include="..\GenericPartner.wsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\sForceService\</RelPath>
-      <UpdateFromURL>D:\src\CustomDev\salesforce_rip_provider\Source\GenericPartner.wsdl</UpdateFromURL>
+      <UpdateFromURL>..\GenericPartner.wsdl</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>

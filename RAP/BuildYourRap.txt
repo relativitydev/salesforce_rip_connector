@@ -1,0 +1,26 @@
+Early versions of Relativity 9.5 are compatible with the v1 RAP file, later versions are not.
+Please follow the directione below if the v1 RAP file throws an error while attempting to install
+
+Instructions to create a RAP file for Relativity 9.5
+
+Download the RAP file from the v1 repo
+Attempt to install it in your Relativity 9.5 environment
+Export the Integration Points Relativity Application
+Extract the following Dlls and add them to the domain of the Salesforce RAP you just attempted to install
+Push the Salesforce App to the Library and it should install succesfully with the new Dlls
+
+kCura.Apps.Common.Config.dll
+kCura.Apps.Common.Data.dll
+kCura.Apps.Common.Utils.dll
+kCura.IntegrationPoints.Contracts.dll
+kCura.IntegrationPoints.Core.Contracts.dll
+kCura.IntegrationPoints.Core.dll
+kCura.IntegrationPoints.Data.dll
+kCura.IntegrationPoints.Domain.dll
+kCura.IntegrationPoints.Security.dll
+kCura.IntegrationPoints.Services.dll
+kCura.IntegrationPoints.SourceProviderInstaller.dll
+kCura.IntegrationPoints.Synchronizers.RDO.dll
+kCura.ScheduleQueue.Core.dll
+SystemInterface.dll
+SystemWrapper.dll
