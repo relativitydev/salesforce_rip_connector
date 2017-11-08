@@ -10,3 +10,6 @@ If the GenericPartner.wsdl file is refreshed there is a possiblitiy that a known
 
 This will result in error CS0030, the proxy class is generated incorrectly where the datatype has been inappropriately created as a two-dimensional array. The issue can be resolved by modifing the incorrect two-dimensional array to a single-dimensional array (ListViewRecordColumn[][] modified to ListViewRecordColumn[]
 and ListViewColumn[][] to ListViewColumn[] in the \sForceService\Reference.cs).
+
+Enhancements for the future : 
+* Add Object Type next to a field that could  potentially have the same name as another field (In another object). Right now, we only pull the cases object from salesforce. If we were to add functionality to pull data in from other Object Types, this would be something we implement.
